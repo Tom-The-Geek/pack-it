@@ -3,9 +3,6 @@ name: Build Documentation
 on:
   push:
     branches: [main]
-    paths:
-    - mkdocs.yml
-    - docs/**
 
 jobs:
   docs:
