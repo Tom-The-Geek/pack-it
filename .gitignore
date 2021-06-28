@@ -3,3 +3,5 @@ pack.toml
 /mods/
 /.idea/
 *.iml
+/release-webhook.json
+/release-webhook.sh
