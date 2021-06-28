@@ -1,16 +1,6 @@
 name: Build with Cargo
 
-on:
-  push:
-    paths:
-      - '**.rs'
-      - 'Cargo.toml'
-      - 'Cargo.lock'
-  pull_request:
-    paths:
-      - '**.rs'
-      - 'Cargo.toml'
-      - 'Cargo.lock'
+on: [push, pull_request]
 
 jobs:
   build:
