@@ -1,0 +1,5 @@
+/target
+pack.toml
+/mods/
+/.idea/
+*.iml
