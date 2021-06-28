@@ -1,0 +1,54 @@
+site_name: pack-it Documentation
+
+repo_name: Tom-The-Geek/pack-it
+repo_url: https://github.com/Tom-The-Geek/pack-it
+
+edit_uri: "" # Hide edit button
+
+nav:
+  - index.md
+  - install.md
+  - usage.md
+  - usage-advanced.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep-orange
+      accent: pink
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep-orange
+      accent: pink
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums: true
+
+plugins:
+  - search
+
+copyright: Copyright &copy; 2021 Tom_The_Geek
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/tCAWpDsBmh
+    - icon: fontawesome/brands/github
+      link: https://github.com/Tom-The-Geek/pack-it
