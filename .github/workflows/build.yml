@@ -19,4 +19,4 @@ jobs:
           rust-version: ${{ matrix.rust }}
       - uses: actions/checkout@v1
       - name: Build release
-        run: cargo build --verbose --release
+        run: cargo build --verbose
