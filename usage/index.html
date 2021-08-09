@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
     
     
       
-        <title>Installation - pack-it Documentation</title>
+        <title>Basic usage - pack-it Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1118c9be.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ba0d045b.min.css">
         
       
     
@@ -55,7 +55,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="pink">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#basic-usage" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="pack-it Documentation" class="md-header__button md-logo" aria-label="pack-it Documentation" data-md-component="logo">
+    <a href=".." title="pack-it Documentation" class="md-header__button md-logo" aria-label="pack-it Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Basic usage
             
           </span>
         </div>
@@ -134,14 +134,18 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -188,8 +192,20 @@
 
 
   <li class="md-tabs__item">
-    <a href="index.html" class="md-tabs__link">
+    <a href=".." class="md-tabs__link">
       Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../install/" class="md-tabs__link">
+      Installation
     </a>
   </li>
 
@@ -202,19 +218,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="install.html" class="md-tabs__link md-tabs__link--active">
-      Installation
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="usage.html" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Basic usage
     </a>
   </li>
@@ -226,7 +230,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="usage-advanced.html" class="md-tabs__link">
+    <a href="../usage-advanced/" class="md-tabs__link">
       Advanced usage
     </a>
   </li>
@@ -242,9 +246,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -256,7 +258,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="pack-it Documentation" class="md-nav__button md-logo" aria-label="pack-it Documentation" data-md-component="logo">
+    <a href=".." title="pack-it Documentation" class="md-nav__button md-logo" aria-label="pack-it Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -288,8 +290,23 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        Installation
       </a>
     </li>
   
@@ -312,25 +329,95 @@
         
       
       
-      <a href="install.html" class="md-nav__link md-nav__link--active">
-        Installation
-      </a>
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basic usage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="usage.html" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         Basic usage
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-pack" class="md-nav__link">
+    Creating a pack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-mods" class="md-nav__link">
+    Adding mods
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#curseforge" class="md-nav__link">
+    CurseForge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modrinth" class="md-nav__link">
+    Modrinth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-releases" class="md-nav__link">
+    GitHub Releases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-mods" class="md-nav__link">
+    Updating mods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-mods" class="md-nav__link">
+    Removing mods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-the-mods" class="md-nav__link">
+    Downloading the mods
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -343,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="usage-advanced.html" class="md-nav__link">
+      <a href="../usage-advanced/" class="md-nav__link">
         Advanced usage
       </a>
     </li>
@@ -363,14 +450,67 @@
               
                 
                 
-                <h1 id="installation">Installation</h1>
-<p>Hop over to the <a href="https://github.com/Tom-The-Geek/pack-it/releases">GitHub releases</a> and download the latest version for your operating system.
-If you are on windows, download <code>pack-it.exe</code>, and on linux download <code>pack-it</code>. If you are on macOS you need to compile pack-it yourself using <code>cargo build --release</code>; this may change in future.</p>
-<p>Once you have downloaded the executable, you probably want to place it in a folder that is included in the <code>PATH</code> environment variable, for example <code>~/.local/bin</code> on linux (might be distribution dependent)</p>
-<p>To verify that it works, open a terminal (or command prompt/powershell on Windows) and run <code>pack-it --version</code>. If it is working, you should see <code>pack-it &lt;version&gt;</code> displayed:</p>
-<p><img alt="Example" src="images/installed.png" /></p>
-                
-                  
+                <h1 id="basic-usage">Basic usage</h1>
+<h2 id="creating-a-pack">Creating a pack</h2>
+<p>In your terminal, navigate to the location of the <code>.minecraft</code> (or whatever your launcher uses) where you want to manage the mods.</p>
+<p>pack-it uses a file called <code>pack.toml</code> to store the list of mods and the information required to download them,
+and so to create an empty <code>pack.toml</code>, you can use <code>pack-it init</code> and answer the questions it asks:</p>
+<p><img alt="pack-it init" src="../images/init.png" /></p>
+<p>This will create a <code>pack.toml</code> like the following:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">pack_name</span> <span class="o">=</span> <span class="s">&quot;Example Pack&quot;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s">&quot;Tom_The_Geek&quot;</span>
+<span class="n">accepted_game_versions</span> <span class="o">=</span> <span class="k">[&quot;1.17&quot;]</span>
+<span class="n">mod_loader</span> <span class="o">=</span> <span class="s">&quot;fabric&quot;</span>
+
+<span class="k">[installed_mods]</span>
+</code></pre></div>
+</td></tr></table></p>
+<h2 id="adding-mods">Adding mods</h2>
+<p>Once you have a <code>pack.toml</code> ready to go, you'll probably want to start adding mods.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>pack-it natively supports adding mods from <a href="https://curseforge.com/minecraft/mc-mods">CurseForge</a>, <a href="https://modrinth.com/mods/">Modrinth</a> and <a href="https://github.com">GitHub releases</a>. To add mods from elsewhere you will have to manually edit the <code>pack.toml</code> file.</p>
+</div>
+<h3 id="curseforge">CurseForge</h3>
+<p>To install mods from CurseForge, you can use the command <code>pack-it curseforge-add &lt;...mod slugs&gt;</code> like so:</p>
+<p><img alt="pack-it curseforge-add" src="../images/cf-add.png" /></p>
+<div class="admonition help">
+<p class="admonition-title">Help</p>
+<p>To obtain the slugs of mods you want to add, open the mod's page in your browser, and look at the last part of the mod's URL</p>
+<p>For example, Fabric API's page is <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">https://www.curseforge.com/minecraft/mc-mods/fabric-api</a>, and so the slug is <code>fabric-api</code>.</p>
+</div>
+<h3 id="modrinth">Modrinth</h3>
+<p>To install mods from Modrinth, you can use the command <code>pack-it modrinth-add &lt;...mod slugs&gt;</code> like so:</p>
+<p><img alt="pack-it modrinth-add" src="../images/mr-add.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>pack-it modrinth-add</code> supports several methods of specifying exactly what you want to add to the pack.</p>
+<p>You can use any of the following forms: <code>&lt;mod slug&gt;</code>, <code>&lt;mod slug&gt;:&lt;version id&gt;</code>, <code>&lt;mod id&gt;</code> or <code>&lt;mod id&gt;:&lt;version id&gt;</code></p>
+</div>
+<h3 id="github-releases">GitHub Releases</h3>
+<p>To install a mod from a GitHub release, you can use <code>pack-it github-add &lt;owner&gt; &lt;repo&gt; &lt;tag&gt;</code> like so:</p>
+<p><img alt="pack-it github-add" src="../images/gh-add.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is recommended to set the <code>GITHUB_TOKEN</code> environment variable to a <a href="https://github.com/settings/tokens">GitHub Personal Access Token (PAT)</a> in order to avoid pack-it from encountering rate-limiting issues. If you don't do this, pack-it will display a warning when using the <code>github-add</code> subcommand.</p>
+<p>You can do this on linux like this: <code>GITHUB_TOKEN=&lt;token goes here&gt; pack-it github-add</code>.</p>
+</div>
+<h2 id="updating-mods">Updating mods</h2>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// TODO: Implement this</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="removing-mods">Removing mods</h2>
+<p>To remove mods from the pack, you can use <code>pack-it remove &lt;...mods&gt;</code> like so:
+<img alt="pack-it remove" src="../images/remove.png" /></p>
+<h2 id="downloading-the-mods">Downloading the mods</h2>
+<p>When running <code>pack-it *-add</code>, mod JARs are not automatically downloaded into the <code>mods/</code> folder, so in order to trigger a download of any changed mods, you need to run <code>pack-it download-mods</code>, which will result in an output like this:</p>
+<p><img alt="pack-it download-mods" src="../images/download-mods.png" /></p>
+<p>which means that all of your mods will have been magically downloaded!</p>
                 
               
               
@@ -390,7 +530,7 @@ If you are on windows, download <code>pack-it.exe</code>, and on linux download 
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../install/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -399,20 +539,20 @@ If you are on windows, download <code>pack-it.exe</code>, and on linux download 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Installation
             </div>
           </div>
         </a>
       
       
         
-        <a href="usage.html" class="md-footer__link md-footer__link--next" aria-label="Next: Basic usage" rel="next">
+        <a href="../usage-advanced/" class="md-footer__link md-footer__link--next" aria-label="Next: Advanced usage" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Basic usage
+              Advanced usage
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -467,10 +607,10 @@ If you are on windows, download <code>pack-it.exe</code>, and on linux download 
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      <script src="../assets/javascripts/bundle.2b46852b.min.js"></script>
       
     
   </body>
