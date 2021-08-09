@@ -2,4 +2,4 @@
 A CLI tool for managing Minecraft mods.
 
 ## Docs
-Documentation Coming Soon(tm)
+Go [here](https://tom-the-geek.github.io/pack-it/) for some nice looking docs :)
