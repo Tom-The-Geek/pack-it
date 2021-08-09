@@ -1,14 +1,14 @@
 use crate::pack::{ModPack, ModMetadata, ModUpdateMetadata};
 use structopt::StructOpt;
-use crate::question::asker::QuestionAsker;
 use std::path::Path;
 use crate::util::{error, complete, warning, hash_from_url, info};
 use crate::sources::curseforge::CurseforgeClient;
 use crate::sources::modrinth::ModrinthClient;
 use crate::sources::github::{GithubClient, get_github_token};
+use dialoguer::{Input, Select};
+use dialoguer::theme::ColorfulTheme;
 
 mod pack;
-mod question;
 mod util;
 mod sources;
 mod download;
@@ -61,14 +61,26 @@ async fn init_pack() -> anyhow::Result<()> {
         return Ok(())
     }
 
-    let mut asker = QuestionAsker::new();
-    let pack_name               = asker.ask_question("What is the name of this pack?")?;
-    let pack_author             = asker.ask_question("Who is the author of this pack?")?;
-    let supported_game_versions = asker.ask_question("What game versions are supported? (seperate with a space or comma)")?;
-    let mod_loader              = asker.ask_from_list("What modloader should this pack use (fabric/forge)?", &["fabric", "forge"])?;
+    // let mut asker = QuestionAsker::new();
+    let pack_name = Input::with_theme(&ColorfulTheme::default())
+        .with_prompt("Pack name")
+        .interact_text()?;
+    let pack_author = Input::with_theme(&ColorfulTheme::default())
+        .with_prompt("Pack author")
+        .interact_text()?;
+    let supported_game_versions: String = Input::with_theme(&ColorfulTheme::default())
+        .with_prompt("Game versions (separated with space or comma)")
+        .interact_text()?;
+    let mod_loaders = &["Fabric", "Forge"];
+    let mod_loader = Select::with_theme(&ColorfulTheme::default())
+        .with_prompt("Target modloader")
+        .default(0)
+        .items(&mod_loaders[..])
+        .interact()?;
+    let mod_loader = mod_loaders[mod_loader];
     let supported_game_versions: Vec<&str> = supported_game_versions.split(|c| c == ' ' || c == ',').collect();
     let supported_game_versions = supported_game_versions.iter().map(|s| s.to_string()).collect();
-    let pack = ModPack::new(pack_name, pack_author, supported_game_versions, mod_loader);
+    let pack = ModPack::new(pack_name, pack_author, supported_game_versions, mod_loader.to_string());
 
     if pack_file_path.exists() {
         error("A pack.toml file already exists in this directory!");
