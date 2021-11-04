@@ -130,7 +130,7 @@ async fn main() -> anyhow::Result<()> {
             let cf_client = CurseforgeClient::new()?;
             for mod_slug in mod_identifiers {
                 info(&*(format!("Resolving {}...", mod_slug)));
-                let mod_data = cf_client.find_mod_by_slug(&mod_slug).await?;
+                let mod_data = cf_client.find_mod_by_slug(&mod_slug, true).await?;
                 let version = pack.resolve_curseforge_version(&mod_data.files);
                 if let Some(version) = version {
                     info(&*(format!("Hashing {}...", version.file_name)));

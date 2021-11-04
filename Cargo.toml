@@ -22,6 +22,7 @@ terminal_size = "0.1"
 
 reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
+async-recursion = "0.3"
 
 sha-1 = "0.9"
 
