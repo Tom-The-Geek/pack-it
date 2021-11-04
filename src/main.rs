@@ -80,7 +80,7 @@ async fn init_pack() -> anyhow::Result<()> {
     let mod_loader = mod_loaders[mod_loader];
     let supported_game_versions: Vec<&str> = supported_game_versions.split(|c| c == ' ' || c == ',').collect();
     let supported_game_versions = supported_game_versions.iter().map(|s| s.to_string()).collect();
-    let pack = ModPack::new(pack_name, pack_author, supported_game_versions, mod_loader.to_string());
+    let pack = ModPack::new(pack_name, pack_author, supported_game_versions, mod_loader.to_lowercase().to_string());
 
     if pack_file_path.exists() {
         error("A pack.toml file already exists in this directory!");
